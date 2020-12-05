@@ -1,0 +1,105 @@
+.jumbotron {
+	background-color: rgb(243, 243, 142);
+	
+}
+.forecast {
+	max-width: 1200px;
+	width: 100%;
+
+	margin: 0 auto;
+
+	color: #333;
+
+	margin-top: 50px;
+}
+
+.forecast__container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 50px;
+	margin-top: 75px;
+}
+
+.forecast-card {
+	background-color: white;
+	box-shadow:
+	0 0.9px 2.7px rgba(0, 0, 0, 0.022),
+	0 2.3px 6.9px rgba(0, 0, 0, 0.031),
+	0 4.8px 14.2px rgba(0, 0, 0, 0.039),
+	0 9.9px 29.2px rgba(0, 0, 0, 0.048),
+	0 27px 80px rgba(0, 0, 0, 0.07)
+	;
+	border-radius: 10px;
+	overflow: hidden;
+	padding: 20px;
+}
+
+.forecast-card__icon {
+	display: block;
+	margin: 0 auto 10px;
+	max-width: 100%;
+}
+
+.forecast-card__day {
+	font-size: 24px;
+	margin-bottom: 5px;
+}
+.forecast-card__condition {
+	margin-bottom: 20px;
+	font-weight: 500;
+}
+
+.forecast-card__temp, .forecast-card__details {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.forecast-card__temp {
+	margin-bottom: 15px;
+}
+
+.forecast-card__temp-high {
+	font-weight: 600;
+}
+
+input.form-control { max-width:  500px; }
+
+.history {
+	max-width: 1200px;
+	margin: 0 auto;
+
+	display: flex;
+}
+
+.history__item {
+	display: flex;
+	width: max-content;
+	align-items: center;
+	padding: 15px 20px;
+	background-color: rgb(210, 224, 241);
+	border-radius: 5px;
+	color: rgb(163, 176, 192);
+	cursor: pointer;
+}
+
+.history__item svg {
+	display: block;
+	height: 20px;
+	width: 20px;
+	margin-right: 10px;
+}
+
+.history__item > * {
+	margin-bottom: 0;
+	margin-top: 0;
+	pointer-events: none;
+}
+
+.history__item p {
+	color: rgb(77, 83, 90);;
+}
+
+.history__item:not(:last-child) {
+	margin-right: 15px;
+}
+
